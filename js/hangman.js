@@ -4,7 +4,8 @@ var choice = woord[Math.floor((Math.random() * woord.length))]
 console.log(choice.length);
 console.log(choice);
 
-initWord(choice.length);
+//initWord(choice.length);
+
 /*click();
 function click(){
 	var button = document.getElementById('button');
@@ -24,6 +25,8 @@ function difficulty(value){
 	img.src = "./img/hm" + lives + ".png";
 	imgdiv.appendChild(img);
 	diff.style.opacity = 0;
+	chooseWord(input.value);
+	initWord(choice.length);
 }
 
 function initWord(choicelength){
@@ -37,6 +40,7 @@ function initWord(choicelength){
 		}
 	}
 }
+
 function checkGuess(guess, el){
 if (lives > 0){
 	console.log(guess);
@@ -62,7 +66,7 @@ if (lives > 0){
 			var complete = document.getElementById("complete");
 			complete.innerHTML = "You died! The correct word was: " + choice;
 
-		}	
+		}
 		var l = document.getElementById("lives");
 		l.innerHTML = "Lives left: " + lives;
 	}
@@ -74,7 +78,7 @@ if (lives > 0){
 function isComplete(){
 	console.log("child nodes:" + woord.childNodes[1].innerHTML)
 	var o = 1;
-	var p = 0;	
+	var p = 0;
 	for (var i = 0; i < woord.childNodes.length; i++){
 		if (o == 1){
 			if (!(woord.childNodes[i].innerHTML)){
@@ -99,4 +103,10 @@ function isComplete(){
 		return;
 	}
 
+}
+
+
+function chooseWord(value)
+{
+	choice = value.toUpperCase();
 }
