@@ -108,5 +108,6 @@ function isComplete(){
 
 function chooseWord(value)
 {
-	choice = value.toUpperCase();
+	if (value)
+		choice = value.toUpperCase();
 }
