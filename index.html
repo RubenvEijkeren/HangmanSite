@@ -38,16 +38,21 @@
     	<h1 id="lives"></h1>
     	<h1 id="complete"></h1>
     </div>
+    <div id="diff">
+      <div id="t" class="t">
+        <button class="diff" onclick="difficulty(11)">EASY</button>
+        <button class="diff" onclick="difficulty(9)">MEDIUM</button>
+        <button class="diff" onclick="difficulty(6)">HARD</button>
+      </div>
+      <div class="t">
+        <h3 id="text">Pick a word or leave this box empty for a random one!</h3>
+      </div>
+      <div class="t">
+        <input id="input" type="password" name="text" class="textbox">
+      </div>
+    </div>
 	</div>
     <div id="image"></div>
-    <div id="diff">
-    	<button class="diff" onclick="difficulty(11)">EASY</button>
-    	<button class="diff" onclick="difficulty(9)">MEDIUM</button>
-    	<button class="diff" onclick="difficulty(6)">HARD</button>
-    	<br>
-    	<h3>pick a word or leave this box empty for a random one!</h3>
-    	<input id="input" type="password" name="text" class="textbox">
-    </div>
     <script src="js/hangman.js">
     </script>
   </body>

@@ -4,23 +4,31 @@
 	width: 30px;
 	display: inline-block;
 	margin: 10px;
-	padding-top: 50px; 
+	padding-top: 50px;
+}
+.container
+{
+	width: 600px;
 }
 .space {
-
 	height: 30px;
 	width: 30px;
 	display: inline-block;
 	margin: 10px;
 }
 .guess {
-	width: 500px;
-	height: 300px;
-	border: 1px solid black;
+	width: 90%;
+	padding: 1em;
+	border: 1px solid grey;
+	background: lightgrey;
 }
 button {
 	width: 50px;
-	height: 50px;	
+	height: 50px;
+}
+button:hover
+{
+	cursor: pointer;
 }
 #image {
 	width: 200px;
@@ -32,11 +40,34 @@ body {
 	grid-template-columns: 1fr 1fr;
 }
 #diff {
-	margin-top: 10px;
-	border: 1px solid black;
+	width: 95%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin-top: 1em;
+	background: lightgrey;
+	border: 1px solid grey;
+}
+.t
+{
+	margin: auto;
+}
+#text, h1
+{
+	font-weight: lighter;
+	font-family: inherit;
+}
+#t
+{
+	width: 500px;
+}
+input
+{
+	text-align: center;
+	padding: 0em;
+	border: 0px solid white;
 }
 .diff {
-	width: 165px;
+	width: 30%;
 }
 #hm {
 	height: 300px;
@@ -48,5 +79,5 @@ body {
 	border-radius: 5px;
 }
 .textbox:focus {
-	
+
 }
