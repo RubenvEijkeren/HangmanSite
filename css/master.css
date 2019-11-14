@@ -33,6 +33,7 @@ body {
 }
 #diff {
 	margin-top: 10px;
+	border: 1px solid black;
 }
 .diff {
 	width: 165px;
@@ -40,4 +41,12 @@ body {
 #hm {
 	height: 300px;
 	width: 200px;
+}
+.textbox {
+	width: 400px;
+	height: 30px;
+	border-radius: 5px;
+}
+.textbox:focus {
+	
 }

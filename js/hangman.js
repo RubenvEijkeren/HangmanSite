@@ -12,10 +12,7 @@ function click(){
 		button.setAttribute("onclick", "checkGuess(this);");
 }*/
 var diff = document.getElementById("diff");
-
-
 var woord = document.getElementById('woord');
-
 var img = document.createElement("img");
 
 function difficulty(value){
@@ -63,7 +60,7 @@ if (lives > 0){
 		if (lives == 0)
 		{
 			var complete = document.getElementById("complete");
-			complete.innerHTML = "You died!";
+			complete.innerHTML = "You died! The correct word was: " + choice;
 
 		}	
 		var l = document.getElementById("lives");
