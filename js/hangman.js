@@ -11,10 +11,23 @@ function click(){
 	for (var i = 0; i < 2; i++)
 		button.setAttribute("onclick", "checkGuess(this);");
 }*/
-var lives = 8;
+var diff = document.getElementById("diff");
+
+
 var woord = document.getElementById('woord');
-var l = document.getElementById("lives");
-		l.innerHTML = "Lives left: " + lives;
+
+var img = document.createElement("img");
+
+function difficulty(value){
+	lives = value;
+	var l = document.getElementById("lives");
+	l.innerHTML = "Lives left: " + lives;
+	var imgdiv = document.getElementById("image");
+	img.id = "hm";
+	img.src = "./img/hm" + lives + ".png";
+	imgdiv.appendChild(img);
+	diff.style.opacity = 0;
+}
 
 function initWord(choicelength){
 	var woord = document.getElementById('woord');
@@ -46,12 +59,13 @@ if (lives > 0){
 	}
 	if (a == 0){
 		lives--;
-/*		if (lives == 0)
+		img.src = "./img/hm" + lives + ".png";
+		if (lives == 0)
 		{
 			var complete = document.getElementById("complete");
 			complete.innerHTML = "You died!";
 
-		}*/
+		}	
 		var l = document.getElementById("lives");
 		l.innerHTML = "Lives left: " + lives;
 	}

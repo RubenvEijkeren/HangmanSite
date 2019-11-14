@@ -6,6 +6,7 @@
     <title>HangMan</title>
   </head>
   <body>
+  	<div class="container">
   	<div id="woord"></div>
     <div class="guess">
     	<button id="button" onclick="checkGuess('A', this)">A</button>
@@ -36,6 +37,13 @@
     	<button id="button" onclick="checkGuess('Z', this)">Z</button>
     	<h1 id="lives"></h1>
     	<h1 id="complete"></h1>
+    </div>
+	</div>	
+    <div id="image"></div>
+    <div id="diff">
+    	<button class="diff" onclick="difficulty(11)">EASY</button>
+    	<button class="diff" onclick="difficulty(9)">MEDIUM</button>
+    	<button class="diff" onclick="difficulty(6)">HARD</button>
     </div>
     <script src="js/hangman.js">
     </script>
